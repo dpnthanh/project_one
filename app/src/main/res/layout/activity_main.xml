@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.project.my.thanh.nhat.pham.dang.dangphamnhatthanh_test4_20171019_1357.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <include
+            android:id="@+id/toolbar_custom"
+            layout="@layout/toolbar_custom">
+
+        </include>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_error"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginTop="-10dp"
+            android:background="@drawable/background_error"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView_bell_error_main"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="23dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_bell_error_mydrashboard" />
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="19dp"
+                android:text="@string/error_header"
+                android:textColor="#fff" />
+
+            <ImageButton
+                android:id="@+id/imageButton_cancel_error_main"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@null"
+                android:src="@drawable/icon_x_error_mydashboard" />
+
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_ViewPagerCalendar"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <ImageView
+                android:id="@+id/imageView_ArrowLeft_main"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/arrow_left" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager_calendar"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height_ViewPagerCalendar"
+                android:layout_weight="8">
+
+            </android.support.v4.view.ViewPager>
+
+            <ImageView
+                android:id="@+id/imageView_ArrowRight_main"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10sp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/arrow_right" />
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager_quote"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+        </android.support.v4.view.ViewPager>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal">
+
+            <RadioGroup
+                android:id="@+id/radioGroupQuote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_Quote0_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorAccent" />
+
+                <RadioButton
+                    android:id="@+id/radio_Quote1_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorAccent" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_view_daily"
+            android:text="@string/button_view_daily"
+            android:textColor="@color/colorAccent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/shape_line_gray" />
+
+        <TextView
+            android:id="@+id/textView_title_moveGoal_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/Move_Goal"
+            android:textColor="@color/textColor_MoveGoal"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/textView_hour_move_goal_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="2hrs"
+            android:textColor="#666666"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textView_session_move_goal_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="per session, 7.30 pm"
+            android:textColor="#666666"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/textView_start_move_goal_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Started on Wednesday, 05 Mar 2015"
+            android:textColor="#b0b0b0"
+            android:textSize="16sp" />
+        <FrameLayout
+            android:id="@+id/frameLayout_seekbar_moveGoal_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/background_move_seekbar_mydashboard"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <ProgressBar
+                android:id="@+id/ProgressBar_circle_moveGoal_main"
+                android:max="100"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="40dp"
+                style="?android:attr/progressBarStyleLarge"
+                android:indeterminateDrawable="@drawable/custom_process" />
+            <ProgressBar
+                android:id="@+id/ProgressBar_tick_moveGoal_main"
+                android:max="100"
+                android:rotation="-90"
+                android:layout_marginRight="50dp"
+                android:layout_gravity="center_vertical|right"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:indeterminateDrawable="@drawable/tick_processbar"/>
+            <LinearLayout
+                android:id="@+id/linearLayout_progress_moveGoal"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/textView1_progress_moveGoal"
+                    android:text="Log your Move Goal"
+                    android:textSize="20sp"
+                    android:textColor="#868686"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/textView2_progress_moveGoal"
+                    android:text="Swipe if you have"
+                    android:textSize="20sp"
+                    android:textColor="#aaaaaa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/textView3_progress_moveGoal"
+                    android:text="achieved your goal today >>"
+                    android:textSize="20sp"
+                    android:textColor="#aaaaaa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <SeekBar
+                android:id="@+id/seekbar_moveGoal_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:splitTrack="false"
+                android:paddingStart="50dp"
+                android:paddingEnd="50dp"
+                android:layout_gravity="center"
+                android:progressDrawable="@drawable/background_seekbar_move_goal"
+                android:thumb="@drawable/icon_seekbar_resize"
+                android:paddingLeft="50dp" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="50dp"></LinearLayout>
+
+        <TextView
+            android:id="@+id/textView_title_anlene_goal_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/Anlene_Goal_title"
+            android:textColor="@color/textColor_MoveGoal"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/textView_hour_anlene_goal_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/Anlene_Goal_info"
+            android:textColor="#666666"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textView_info1_anlene_goal_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/Anlene_Goal_info2"
+            android:textColor="#b0b0b0"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView_info2_anlene_goal_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/Anlene_Goal_info3"
+            android:textColor="#b0b0b0"
+            android:textSize="16sp" />
+        <LinearLayout
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/imageButton_up_milk"
+                    android:src="@drawable/arrow_up"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content" />
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/imageView_icon_milk_main"
+                        android:src="@drawable/icon_milk_none"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/textView_Milk_Count_main"
+                        android:text=""
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:layout_marginBottom="15dp"
+                        android:textColor="#3cd1ea"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </FrameLayout>
+                <TextView
+                    android:text="Milk"
+                    android:textColor="#666666"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageButton
+                    android:id="@+id/imageButton_down_milk"
+                    android:src="@drawable/arrow_down"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/imageButton_up_yaout"
+                    android:src="@drawable/arrow_up"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content" />
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/imageView_icon_yaout_main"
+                        android:src="@drawable/icon_yaout_none"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/textView_yaout_Count_main"
+                        android:text=""
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:layout_marginBottom="15dp"
+                        android:textColor="#3cd1ea"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </FrameLayout>
+                <TextView
+                    android:text="Yaout"
+                    android:textColor="#666666"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageButton
+                    android:id="@+id/imageButton_down_yaout"
+                    android:src="@drawable/arrow_down"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/imageButton_up_concentrate"
+                    android:src="@drawable/arrow_up"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content" />
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/imageView_icon_concentrate_main"
+                        android:src="@drawable/icon_concentrate_none"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/textView_concentrate_Count_main"
+                        android:text=""
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:layout_marginBottom="15dp"
+                        android:textColor="#3cd1ea"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </FrameLayout>
+                <TextView
+                    android:text="Concentrate"
+                    android:textColor="#666666"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageButton
+                    android:id="@+id/imageButton_down_concentrate"
+                    android:src="@drawable/arrow_down"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/frameLayout_seekbar_anleneGoal_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/background_move_seekbar_mydashboard"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <ProgressBar
+                android:id="@+id/ProgressBar_circle_anleneGoal_main"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="40dp"
+                android:indeterminate="false"
+                style="?android:attr/progressBarStyleLarge"
+                android:indeterminateDrawable="@drawable/custom_process"
+                android:progress="1" />
+            <ProgressBar
+                android:id="@+id/ProgressBar_tick_anleneGoal_main"
+                android:rotation="-90"
+                android:layout_marginRight="50dp"
+                android:layout_gravity="center_vertical|right"
+                style="?android:attr/absListViewStyle"
+                android:layout_width="30dp"
+                android:indeterminate="true"
+                android:layout_height="wrap_content"
+                android:indeterminateDrawable="@drawable/tick_processbar"/>
+            <LinearLayout
+                android:id="@+id/linearLayout_progress_anleneGoal"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/textView1_progress_anleneGoal"
+                    android:text="Log your Anlene Goal"
+                    android:textSize="20sp"
+                    android:textColor="#868686"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/textView2_progress_anleneGoal"
+                    android:text="Swipe if you have"
+                    android:textSize="20sp"
+                    android:textColor="#aaaaaa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/textView3_progress_anleneGoal"
+                    android:text="achieved your goal today >>"
+                    android:textSize="20sp"
+                    android:textColor="#aaaaaa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <SeekBar
+                android:id="@+id/seekbar_anleneGoal_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:splitTrack="false"
+                android:paddingStart="50dp"
+                android:paddingEnd="50dp"
+                android:layout_gravity="center"
+                android:progressDrawable="@drawable/background_seekbar_move_goal"
+                android:thumb="@drawable/icon_seekbar_anlene_resize" />
+
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="15dp"
+            android:gravity="center_horizontal"
+            android:background="@color/background_health_footer">
+            <TextView
+                android:text="@string/Access_to_Health_App_data"
+                android:textColor="@color/textColor_health"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:src="@drawable/google_fit_logo"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="20dp"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="@string/Connect_your_health_app"
+                android:textColor="#666666"
+                android:gravity="center_horizontal"
+                android:textSize="18sp"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:background="@drawable/button_connect"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Connect"
+                android:textColor="@color/textColor_button_conect"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

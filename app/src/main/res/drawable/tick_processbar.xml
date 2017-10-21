@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/background_tick"
+        android:drawable="@drawable/tick">
+
+
+    </item>
+    <item android:id="@+id/process_tick">
+        <clip android:drawable="@drawable/tick_checked">
+
+        </clip>
+
+    </item>
+</layer-list>

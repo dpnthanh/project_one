@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:weightSum="10"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_ViewPagerCalendar">
+
+        <TextView
+            android:id="@+id/textView_day_calendar_Fragment"
+            android:text="Today, Day 05"
+            android:textColor="@color/textColor_caculator_viewPager"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/textView_month_calendar_Fragment"
+            android:text="08 Mar"
+            android:textColor="@color/textColor_caculator_viewPager"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+
+</LinearLayout>

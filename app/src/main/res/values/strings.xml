@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">anlene app</string>
+    <string name="textView_header_mydashboard">My Dashboard</string>
+    <string name="error_header">Looks like you’ve yet to connect your social accounts. Would you like to do this now?</string>
+
+    //quote
+    <string name="quote1_main">Set your goal high and don’t stop till you get there</string>
+    <string name="em_quocte1_main">by Bo jacksone</string>
+    <string name="quote0_main">I want to keep moving and keep a healthy lifestyle.</string>
+    <string name="em_quocte0_main">by Brenda Lee</string>
+    <string name="button_view_daily">View Daily Inspiration for the day</string>
+    
+    <string name="Move_Goal">Move Goal</string>
+
+    <string name="Anlene_Goal_title">Anlene Goal</string>
+    <string name="Anlene_Goal_info">Did you take Anlene today?</string>
+    <string name="Anlene_Goal_info2">Tap the arrows (up/down) to set the amount</string>
+    <string name="Anlene_Goal_info3">you consumed today.</string>
+
+    <string name="Access_to_Health_App_data">Access to Health App data</string>
+    <string name="Connect_your_health_app">Connect your health app data for more accurate statistics.</string>
+
+
+</resources>
